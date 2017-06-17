@@ -22,7 +22,7 @@ public class UserDao {
     }
   }
 
-  public boolean inserirUser(User user) {
+  public boolean insertUser(User user) {
     try {
       em.persist(user);
       return true;
@@ -32,7 +32,7 @@ public class UserDao {
     }
   }
 
-  public boolean deletarUser(User user) {
+  public boolean deleteUser(User user) {
     try {
       em.remove(user);
       return true;
